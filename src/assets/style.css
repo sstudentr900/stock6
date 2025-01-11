@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  font-family: 'Noto Sans TC', sans-serif; /*黑體字*/
+  /* font-family: "Noto Serif TC", serif; */ /*明體字*/
+  @apply bg-gray-900; /* Tailwind 顏色和透明度工具 */
+  /* --tw-bg-opacity:1; 
+  background-color: rgb(17 24 39 / var(--tw-bg-opacity)); */
+}
+
+/* 整體滾動條 */
+.customScroll::-webkit-scrollbar {
+    width: 4px; /* 滾動條的寬度 */
+    /*height: 12px;*/ /* 滾動條的高度 */
+}
+/* 滾動條的背景 */
+.customScroll::-webkit-scrollbar-track {
+  background: none; 
+}
+/* 滾動條的滑塊 */
+.customScroll::-webkit-scrollbar-thumb {
+  background: none; 
+  border-radius: 10px; /* 滑塊的圓角 */
+}
+
+/* 滑塊的顏色在懸停時 */
+.customScroll:hover::-webkit-scrollbar-thumb {
+  background: #6B7280; /* 滑塊的顏色 */
+}
