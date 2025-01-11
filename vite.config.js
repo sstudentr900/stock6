@@ -12,9 +12,10 @@ export default defineConfig({
     autoprefixer,
     vue(),
   ],
+  base: '/stock6/dist/',  // 所有资源路径都会加上 '/src/' 前缀
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
-  }
+  },
 })
